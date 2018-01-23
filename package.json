@@ -1,0 +1,20 @@
+{
+    "name": "serverless-python-sample",
+    "version": "1.0.1",
+    "description": "A simple serverless python sample",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/bennybauer/serverless-python-sample.git"
+    },
+    "keywords": [
+      "python",
+      "aws",
+      "lambda",
+      "serverless"
+    ],
+    "author": "anderson",
+    "license": "MIT",
+    "dependencies": {
+      "serverless-python-requirements": "^2.2.1"
+    }
+  }

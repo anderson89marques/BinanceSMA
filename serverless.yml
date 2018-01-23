@@ -1,0 +1,30 @@
+service: klines
+
+provider:
+  name: aws
+  runtime: python3.6
+  memorySize: 128
+
+package:
+  exclude:
+    - binanceapi/test_core.py
+    - node_modules/**
+    - .venv/**
+    - .cache
+    - .vscode
+    - __pycache__
+    - .requirements/**
+    - README.md
+    - package.json
+    - requirements.txt
+
+functions:
+  klines:
+    handler: binanceapi/core.klines
+    events:
+      - http:
+          path: klines/sma/{interval}
+          method: get
+
+plugins:
+  - serverless-python-requirements

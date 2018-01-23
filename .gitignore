@@ -1,0 +1,7 @@
+node_modules
+.venv
+.cache
+.vscode
+__pycache__
+.requirements
+.serverless
